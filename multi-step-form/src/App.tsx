@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import MultiStepForm from "./Component/MultiStepForm/MultiStepForm";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen p-8 flex justify-center items-center">
+      <div className="w-full max-w-lg">
+        <h1 className="text-2xl font-bold mb-6 text-center">Multi-Step Form</h1>
+        <MultiStepForm />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
